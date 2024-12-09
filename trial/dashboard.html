@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submeter Portal - Dashboard</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js" defer></script>
+</head>
+<body class="dashboard-body">
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h2>Submeter Portal</h2>
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="#dashboard"><i class="icon">📊</i> Dashboard</a></li>
+            <li><a href="#meters"><i class="icon">🔌</i> Meters</a></li>
+            <li><a href="#reports"><i class="icon">📈</i> Reports</a></li>
+            <li><a href="#alerts"><i class="icon">🔔</i> Alerts</a></li>
+            <li><a href="#settings"><i class="icon">⚙️</i> Settings</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <button id="logoutBtn" class="logout-button">Logout</button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-bar">
+            <div class="search-bar">
+                <input type="search" placeholder="Search...">
+            </div>
+            <div class="user-info">
+                <span class="user-name">John Doe</span>
+                <div class="user-avatar">JD</div>
+            </div>
+        </header>
+
+        <div class="dashboard-grid">
+            <div class="card energy-consumption">
+                <h3>Total Energy Consumption</h3>
+                <div class="card-content">
+                    <span class="value">45,678</span>
+                    <span class="unit">kWh</span>
+                </div>
+                <div class="trend positive">+2.5% vs last month</div>
+            </div>
+
+            <div class="card peak-demand">
+                <h3>Peak Demand</h3>
+                <div class="card-content">
+                    <span class="value">1,234</span>
+                    <span class="unit">kW</span>
+                </div>
+                <div class="trend negative">-1.8% vs last month</div>
+            </div>
+
+            <div class="card active-meters">
+                <h3>Active Meters</h3>
+                <div class="card-content">
+                    <span class="value">24</span>
+                    <span class="unit">units</span>
+                </div>
+                <div class="status">All systems operational</div>
+            </div>
+
+            <div class="card alerts">
+                <h3>Recent Alerts</h3>
+                <ul class="alert-list">
+                    <li class="alert-item warning">High consumption detected - Building A</li>
+                    <li class="alert-item error">Meter offline - Zone 3</li>
+                    <li class="alert-item info">Maintenance scheduled - Tomorrow</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

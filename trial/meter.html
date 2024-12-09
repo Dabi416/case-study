@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submeter Portal - Meters</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="meters.css">
+    <script src="dashboard.js" defer></script>
+    <script src="meters.js" defer></script>
+</head>
+<body class="dashboard-body">
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <h2>Submeter Portal</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html"><i class="icon">📊</i> Dashboard</a></li>
+            <li class="active"><a href="meters.html"><i class="icon">🔌</i> Meters</a></li>
+            <li><a href="reports.html"><i class="icon">📈</i> Reports</a></li>
+            <li><a href="alerts.html"><i class="icon">🔔</i> Alerts</a></li>
+            <li><a href="settings.html"><i class="icon">⚙️</i> Settings</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <button id="logoutBtn" class="logout-button">Logout</button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-bar">
+            <div class="search-bar">
+                <input type="search" placeholder="Search meters...">
+            </div>
+            <div class="user-info">
+                <span class="user-name">John rey</span>
+                <div class="user-avatar">JD</div>
+            </div>
+        </header>
+
+        <div class="meters-container">
+            <div class="meters-header">
+                <h2>Energy Meters</h2>
+                <button class="add-meter-btn">+ Add New Meter</button>
+            </div>
+
+            <div class="meters-grid">
+                <div class="meter-card">
+                    <div class="meter-header">
+                        <h3>Building A - Main Meter</h3>
+                        <span class="status active">Active</span>
+                    </div>
+                    <div class="meter-details">
+                        <div class="detail-item">
+                            <span class="label">Meter ID:</span>
+                            <span class="value">MT001</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Current Reading:</span>
+                            <span class="value">45,678 kWh</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Last Updated:</span>
+                            <span class="value">5 mins ago</span>
+                        </div>
+                    </div>
+                    <div class="meter-actions">
+                        <button class="action-btn">View Details</button>
+                        <button class="action-btn">Configure</button>
+                    </div>
+                </div>
+
+                <!-- More meter cards -->
+                <div class="meter-card">
+                    <div class="meter-header">
+                        <h3>Building B - Solar Meter</h3>
+                        <span class="status warning">Warning</span>
+                    </div>
+                    <div class="meter-details">
+                        <div class="detail-item">
+                            <span class="label">Meter ID:</span>
+                            <span class="value">MT002</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Current Reading:</span>
+                            <span class="value">12,345 kWh</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Last Updated:</span>
+                            <span class="value">2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="meter-actions">
+                        <button class="action-btn">View Details</button>
+                        <button class="action-btn">Configure</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
